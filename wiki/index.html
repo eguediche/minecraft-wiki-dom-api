@@ -4,75 +4,121 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Minecraft wiki</title>
-		<link rel="stylesheet" href="../wiki/reset.css" />
-		<link rel="stylesheet" href="../wiki/normalize.css" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="../wiki/main.css" />
 	</head>
 	<body>
 		<header>
 			<nav>
-				<div class="icon-title">
-					<img src="../assets/IconMinecarft.svg" alt="icon-minecarft" />
-					<div class="title">
-						<p>Minecraft</p>
-						<p>wiki</p>
+				<div class="nav-1">
+					<div class="icon-title">
+						<img
+							src="../assets/IconMinecarft.svg"
+							alt="icon-minecarft"
+						/>
+						<div class="title">
+							<p>Minecraft</p>
+							<p>wiki</p>
+						</div>
+					</div>
+					<div class="link">
+						<div class="button-link">
+							<img src="../assets/explore.svg" alt="explore" />
+							<p>
+								<a class="link-pages" href="index.html"
+									>EXPLORE</a
+								>
+							</p>
+						</div>
+						<div class="button-link">
+							<img src="../assets/arena.svg" alt="arena" />
+							<p>
+								<a class="link-pages" href="../arena/arena.html"
+									>ARENA</a
+								>
+							</p>
+						</div>
+						<div class="button-link">
+							<img src="../assets/rule.svg" alt="rules" />
+							<p>
+								<a class="link-pages" href="../arena/rules.html"
+									>RULES</a
+								>
+							</p>
+						</div>
 					</div>
 				</div>
-
-				<div class="search">
-					<img src="../assets/Crusor.svg" alt="crusor" />
-					<input type="search" placeholder="Search..." />
+				<div class="nav-2">
+					<div class="search">
+						<img src="../assets/Crusor.svg" alt="crusor" />
+						<input type="search" placeholder="Search..." />
+					</div>
+					<img
+						class="burger"
+						src="../assets/IconBurger.svg"
+						alt="burger"
+					/>
+					<img class="night" src="../assets/night.svg" alt="night" />
 				</div>
-				<img src="../assets/IconBurger.svg" alt="burger" />
 			</nav>
 		</header>
 		<main>
-            <div class="gradiant"></div>
-            <div class="dirt"></div>
-			<h1>Explore Minecraft entities</h1>
-			<div class="warning-wiki">
-				<img src="../assets/Warning-wiki.svg" alt="warning wiki img" />
-				<p>
-					<span>This page use many images.</span> It is not recommended for
-					people with limited or slow internet connections to read through this
-					page.
-				</p>
-			</div>
-			<section class="yap-wiki">
-				<div class="yap-wiki-text">
+			<section class="main-2">
+				<h1>Explore Minecraft entities</h1>
+				<div class="warning-wiki">
+					<img
+						src="../assets/Warning-wiki.svg"
+						alt="warning wiki img"
+					/>
 					<p>
-						An <span>Entity</span> is an AI-driven game entity resembling a
-						living creature. Besides its common meaning, the term "mob" is short
-						for "mobile entity". All entities can be attacked and hurt (from
-						falling, attacked by a player or another entity, falling into the
-						void, hit by an arrow, etc), and have some form of voluntary
-						movement.
-					</p>
-					<p>
-						Different types of entities often have unique AI and drop good or
-						bad loot depending on the entity that was killed.
+						<span>This page use many images.</span> It is not
+						recommended for people with limited or slow internet
+						connections to read through this page.
 					</p>
 				</div>
-				<img src="../assets/minecraft mob.svg" alt="minecraft mob img" />
-			</section>
-			<section class="entities-list">
-				<h2>List of entities</h2>
-				<hr />
-				<p>
-					Entities are classifie by their nature from the player's perspective.
-					You can search for one or multiples entities by their name using the
-					search bar or simply by filling appropriate filters (type, health,
-					armor, damage, etc..)
-				</p>
-			</section>
-			<section class="entites-search">
-				<div class="name-search">
-					<img src="../assets/magnify.svg" alt="loupe img" />
-					<input type="search" placeholder="Search..." />
-				</div>
-				<div class="class-search">
-					<label for="class-select"></label>
-				</div>
+				<section class="yap-wiki">
+					<div class="yap-wiki-text">
+						<p>
+							An <span>Entity</span> is an AI-driven game entity
+							resembling a living creature. Besides its common
+							meaning, the term "mob" is short for "mobile
+							entity". All entities can be attacked and hurt (from
+							falling, attacked by a player or another entity,
+							falling into the void, hit by an arrow, etc), and
+							have some form of voluntary movement.
+						</p>
+						<p>
+							Different types of entities often have unique AI and
+							drop good or bad loot depending on the entity that
+							was killed.
+						</p>
+					</div>
+					<img
+						src="../assets/minecraft mob.svg"
+						alt="minecraft mob img"
+					/>
+				</section>
+				<section class="entities-list">
+					<h2>List of entities</h2>
+					<hr />
+					<p>
+						Entities are classifie by their nature from the player's
+						perspective. You can search for one or multiples
+						entities by their name using the search bar or simply by
+						filling appropriate filters (type, health, armor,
+						damage, etc..)
+					</p>
+				</section>
+				<section class="entites-search">
+					<div class="name-search">
+						<img src="../assets/magnify.svg" alt="loupe img" />
+						<input type="search" placeholder="Search..." />
+					</div>
+					<div class="class-search">
+						<label for="class-select"></label>
+					</div>
+				</section>
 			</section>
 		</main>
 	</body>
