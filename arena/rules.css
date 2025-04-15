@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	gap: 19px;
+	padding: 12px;
+	background: url(../assets/BlockBlack.jpg);
+}
+
+.icon-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;   
+}
+
+.title {
+	display: flex;
+	gap: 3px;
+	font-family: Rubik;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 100%;
+	color: #fff;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	border-radius: 18px;
+	gap: 3px;
+	padding: 5px;
+	background: #fff;
+}
+
+input {
+	border: none;
+	width: 22vw;
+	height: 100%;
+}
