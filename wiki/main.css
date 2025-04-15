@@ -1,5 +1,5 @@
 body {
-    background-image: url(/assets/BlockBlack.jpg);
+    background: url(../assets/BlockBlack.jpg);
     display: flex;
     flex-direction: column;
 }
@@ -12,6 +12,6 @@ body {
 
 .dirt {
     width: 100%;
-    height: 38.45vh;
-    background-image: url(/assets/background-dirt.svg);
+    height: 38.4vh;
+    background: url(../assets/background-dirt.svg);
 }
