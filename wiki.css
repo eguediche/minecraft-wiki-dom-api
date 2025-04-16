@@ -21,6 +21,13 @@
     height: 80vh;
 }
 
+.wiki-p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: center;
+}
+
 .yap-wiki-text {
     text-align: left;
     display: flex;
@@ -91,6 +98,7 @@ label {
 .select-input {
     width: 75%;
     padding-left: 10px;
+    border-radius: 4px;
 }
 
 .select-span {
@@ -124,4 +132,79 @@ label {
 
 .emoji-wrongSearch {
     width: 20%;
+}
+
+@media  screen and (min-width: 768px) {
+    .yap-wiki {
+        flex-direction: row;
+        height: 30vh;
+    }
+
+    .yap-wiki-text {
+        width: 50%;
+        gap: 50px;
+    }
+    
+    .allMob-img {
+        width: 50%;
+    }
+
+    .entities-list {
+        gap: 10px;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .class-search {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        height: 10vh;
+        margin-top: 7%;
+    }
+
+    .select-input {
+        height: 35%;
+    }
+
+    .search-btn {
+        height: 5vh;
+        width: 40%;
+        margin-bottom: 5%;
+    }
+
+    .emoji-wrongSearch {
+        width: 10%;
+    }
+
+    .warning-wiki {
+        width: 95%
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .yap-wiki {
+        height: 20vh;
+    }
+
+    .allMob-img {
+        width: 20%;
+    }
+
+    .yap-wiki-text {
+        width:65%;
+    }
+
+    .entites-search {
+        width: 80%;
+        align-self: center;
+    }
+
+    .search-btn {
+        width: 10vw;
+    }
+    
+    .emoji-wrongSearch {
+        width: 5%;
+    }
 }

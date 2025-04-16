@@ -3,6 +3,16 @@
 	padding: 0;
 }
 
+html {
+	height: 100vh;
+}
+
+body {
+	height: 100vh;
+}
+
+
+
 .word-gras {
 	font-weight: 600;
 	color: #000000;
@@ -16,4 +26,10 @@ hr {
 
 .p-link {
 	font-weight: 400;
+}
+
+@media screen and (min-width: 1080px) {
+	main {
+		height: 100vh;
+	}
 }
