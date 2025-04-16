@@ -77,7 +77,7 @@
 							bad loot depending on the entity that was killed.
 						</p>
 					</div>
-					<img src="../assets/minecraft mob.svg" alt="minecraft mob img" />
+					<img class="allMob-img" src="../assets/minecraft mob.svg" alt="minecraft mob img" />
 				</div>
 				<div class="entities-list">
 					<h2>List of entities</h2>
@@ -95,7 +95,48 @@
 						<input type="search" placeholder="Search..." />
 					</div>
 					<div class="class-search">
-						<label for="class-select"></label>
+						<label for="class-select">
+							classification
+							<select name="classification" id="class-select">
+								<option value="">Choose</option>
+								<option value="arthropod">arthropod</option>
+								<option value="undead">undead</option>
+								<option value="animal">animal</option>
+								<option value="aquatic">aquatic</option>
+								<option value="monster">monster</option>
+							</select>
+						</label>
+						<label for="type-select">
+							Type
+							<select name="type" id="type-select">
+								<option value="">Choose</option>
+								<option value="passive">passive</option>
+								<option value="neutral">neutral</option>
+								<option value="hostile">hostile</option>
+							</select>
+						</label>
+						<label for="health-select">
+							Health
+							<input type="number" placeholder="18">
+						</label>
+						<label for="armor-select">
+							Armor
+							<input type="number" placeholder="12">
+						</label>
+						<label for="damage-select">
+							Damage
+							<input type="number" placeholder="2">
+						</label>
+					</div>
+					<button class="search-btn">
+						SEARCH
+					</button>
+					<hr>
+					<div class="search-result">
+						<div class="wrong-search">
+							<h3>No entity found</h3>
+							<img src="./assets/sick-emoji.svg" alt="sick emoji">
+						</div>
 					</div>
 				</div>
 			</section>

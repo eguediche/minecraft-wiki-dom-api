@@ -102,8 +102,18 @@ section {
 	gap: 26px;
 	margin: 27px;
 	margin-top: 142px;
-	background-color: #fff;
+	background-color: #E6EFF4;
 	border-radius: 4px;
+}
+
+h3 {
+	color: #8C8C8C;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: center;
+	vertical-align: middle;
 }
 
 h2 {
@@ -123,9 +133,16 @@ h1 {
 }
 
 p {
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 100%;
 }
+
+span {
+    font-weight: 600;
+    font-size: 16px;
+}
+
 hr {
 	height: 1px;
 	background-color: #3a3a3a;
