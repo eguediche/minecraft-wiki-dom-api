@@ -11,7 +11,8 @@
 }
 
 main {
-	background: repeat-x top center / contain url("../assets/background-dirt.png"),
+	background: repeat-x top center / contain
+			url("../assets/background-dirt.png"),
 		url("../assets/BlockBlack.jpg");
 	background-size: 300%;
 	display: flex;
@@ -103,12 +104,12 @@ section {
 	gap: 26px;
 	margin: 27px;
 	margin-top: 142px;
-	background-color: #E6EFF4;
+	background-color: #e6eff4;
 	border-radius: 4px;
 }
 
 h3 {
-	color: #8C8C8C;
+	color: #8c8c8c;
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 100%;
@@ -140,12 +141,12 @@ p {
 }
 
 span {
-    font-weight: 600;
-    font-size: 16px;
+	font-weight: 600;
+	font-size: 16px;
 }
 
 label {
-	color: #3A3A3A;
+	color: #3a3a3a;
 }
 
 hr {
@@ -174,7 +175,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
 	.search {
 		width: 80%;
 	}
@@ -223,7 +223,7 @@ body {
 		border-radius: 24px;
 	}
 	.search {
-		width: 40vw;
+		width: 30vw;
 		border-radius: 24px;
 	}
 
