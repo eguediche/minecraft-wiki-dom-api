@@ -170,6 +170,9 @@ body {
 main {
 	height: 100vh;
 }
+.search1 {
+	width: 77%;
+}
 
 @media screen and (min-width: 768px) {
 	.search {
