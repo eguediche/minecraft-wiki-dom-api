@@ -159,6 +159,20 @@ hr {
 	text-decoration: none;
 }
 
+html {
+	height: 100vh;
+}
+
+body {
+	height: 100vh;
+}
+
+@media screen and (min-width: 1080px) {
+	main {
+		height: 100vh;
+	}
+}
+
 @media screen and (min-width: 768px) {
 
 	.search {
