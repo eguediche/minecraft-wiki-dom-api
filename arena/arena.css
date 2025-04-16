@@ -71,6 +71,54 @@ section {
 	gap: 15px;
 }
 
+table {
+	border: 1px solid blackx;
+	border-collapse: collapse;
+}
+
+tr {
+	border: 1px solid #000000;
+}
+
+.body-head {
+	display: table-row-group;
+}
+
+.td-1 {
+	padding: 2px;
+}
+
+.td-2 {
+	padding: 2px;
+}
+
+.td-3 {
+	padding: 5px;
+}
+
+.td-4 {
+	padding: 3px;
+}
+.td-5 {
+	padding: 13px;
+}
+
+table {
+	color: #3a3a3a;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	vertical-align: middle;
+}
+
+.responsive-2 {
+	display: none;
+}
+
+.head-body {
+	background-color: #8e8e8e;
+}
 @media screen and (min-width: 768px) {
 	.modo {
 		width: 95%;
@@ -85,11 +133,25 @@ section {
 	.vert {
 		width: 30%;
 	}
+
+	.responsive-1 {
+		display: none;
+	}
+	.responsive-2 {
+		display: block;
+	}
+
+	.head-body {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 10px;
+		height: 27vh;
+	}
 }
 
-@media screen and (min-width: 1080) {
+@media screen and (min-width: 1080px) {
 	input {
 		width: 25vw;
 	}
-
 }
