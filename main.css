@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+:root {
+	font-family: Rubik;
+}
+
 * {
 	margin: 0;
 	padding: 0;
-	font-family: Rubik;
 }
+
 main {
-	background: repeat-x top center / contain
-			url("../assets/background-dirt.png"),
+	background: repeat-x top center / contain url("../assets/background-dirt.png"),
 		url("../assets/BlockBlack.jpg");
 	background-size: 300%;
 	display: flex;
@@ -91,7 +94,7 @@ input {
 	display: none;
 }
 
-.main-2 {
+section {
 	padding: 32px;
 	display: flex;
 	flex-direction: column;
@@ -101,6 +104,32 @@ input {
 	margin-top: 142px;
 	background-color: #fff;
 	border-radius: 4px;
+}
+
+h2 {
+	color: #3a3a3a;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 100%;
+}
+
+h1 {
+	color: #3a3a3a;
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: center;
+}
+
+p {
+	font-size: 16px;
+	line-height: 100%;
+}
+hr {
+	height: 1px;
+	background-color: #3a3a3a;
+	width: 100%;
 }
 
 .link-pages {
