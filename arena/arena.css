@@ -81,6 +81,8 @@ section {
 	}
 }
 
-@media screen and (min-width: 1080) {
-
+@media  screen and (min-width: 1080) {
+	input {
+		width: 25vw;
+	}
 }
