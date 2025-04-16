@@ -166,11 +166,8 @@ html {
 body {
 	height: 100vh;
 }
-
-@media screen and (min-width: 1080px) {
-	main {
-		height: 100vh;
-	}
+main {
+	height: 100%;
 }
 
 @media screen and (min-width: 768px) {
