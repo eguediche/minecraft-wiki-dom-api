@@ -143,6 +143,10 @@ span {
     font-size: 16px;
 }
 
+label {
+	color: #3A3A3A;
+}
+
 hr {
 	height: 1px;
 	background-color: #3a3a3a;
