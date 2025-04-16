@@ -170,13 +170,13 @@ body {
 main {
 	height: 100vh;
 }
-.search1 {
-	width: 77%;
-}
 
 @media screen and (min-width: 768px) {
 	.search {
 		width: 80%;
+	}
+	.search1 {
+		width: 77%;
 	}
 	main {
 		align-items: center;
