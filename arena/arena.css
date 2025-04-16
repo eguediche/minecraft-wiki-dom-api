@@ -41,10 +41,10 @@ h1 {
 
 input {
 	border: none;
-    width: 75%;
-    height: 4vh;
-    border-radius: 4px;
-    padding: 8px;
+	width: 75%;
+	height: 4vh;
+	border-radius: 4px;
+	padding: 8px;
 }
 
 section {
@@ -65,8 +65,14 @@ section {
 	text-align: center;
 }
 
-@media  screen and (min-width: 768px) {
-	.modo  {
+.create-modo {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+	.modo {
 		width: 95%;
 		height: 3vh;
 	}
@@ -81,8 +87,9 @@ section {
 	}
 }
 
-@media  screen and (min-width: 1080) {
+@media screen and (min-width: 1080) {
 	input {
 		width: 25vw;
 	}
+
 }
