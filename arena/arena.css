@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 100%;
+	text-align: center;
+}
+
+.gras {
+	font-weight: 600;
+	color: #000000;
+}
+.value {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+}
+.colume {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.modo {
+	width: 88%;
+}
