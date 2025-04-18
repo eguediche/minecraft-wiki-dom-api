@@ -10,10 +10,12 @@
 	box-sizing: border-box;
 }
 
+body {
+	background: url("../assets/BlockBlack.jpg");
+}
+
 main {
-	background: repeat-x top center / contain
-			url("../assets/background-dirt.png"),
-		url("../assets/BlockBlack.jpg");
+	background: repeat-x top center / contain url("../assets/background-dirt.png");
 	background-size: 300%;
 	display: flex;
 	flex-direction: column;
@@ -168,7 +170,7 @@ body {
 	height: 100vh;
 }
 main {
-	height: 100vh;
+	height: max-content;
 }
 
 @media screen and (min-width: 768px) {

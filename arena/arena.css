@@ -119,6 +119,11 @@ table {
 .head-body {
 	background-color: #8e8e8e;
 }
+
+section {
+	width: 88vw;
+}
+
 @media screen and (min-width: 768px) {
 	.modo {
 		width: 95%;

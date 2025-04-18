@@ -11,8 +11,6 @@ body {
 	height: 100vh;
 }
 
-
-
 .word-gras {
 	font-weight: 600;
 	color: #000000;
@@ -30,6 +28,6 @@ hr {
 
 @media screen and (min-width: 1080px) {
 	main {
-		height: 100vh;
+		min-height: 100vh;
 	}
 }
