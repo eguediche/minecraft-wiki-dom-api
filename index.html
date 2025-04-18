@@ -92,7 +92,7 @@
 				<div class="entites-search">
 					<div class="name-search">
 						<img src="../assets/magnify.svg" alt="loupe img" />
-						<input type="search" placeholder="Search..." />
+						<input class="search-input" type="search" placeholder="Search..." />
 					</div>
 					<div class="class-search">
 						<label for="class-select">
@@ -117,15 +117,15 @@
 						</label>
 						<label for="health-select">
 							<span class="select-span">Health</span>
-							<input class="select-input" type="number" placeholder="18">
+							<input id="health-input" class="select-input" type="number" placeholder="18">
 						</label>
 						<label for="armor-select">
 							<span class="select-span">Armor</span>
-							<input class="select-input" type="number" placeholder="12">
+							<input id="armor-input" class="select-input" type="number" placeholder="12">
 						</label>
 						<label for="damage-select">
 							<span class="select-span">Damage</span>
-							<input class="select-input" type="number" placeholder="2">
+							<input id="damage-input" class="select-input" type="number" placeholder="2">
 						</label>
 					</div>
 					<button class="search-btn">
@@ -142,4 +142,5 @@
 			</section>
 		</main>
 	</body>
+	<script src="index.js"></script>
 </html>

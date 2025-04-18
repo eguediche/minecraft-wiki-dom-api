@@ -14,6 +14,11 @@
     gap: 10px;
 }
 
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
 .yap-wiki {
     display: flex;
     flex-direction: column;
@@ -142,7 +147,7 @@ label {
 
     .yap-wiki-text {
         width: 50%;
-        gap: 50px;
+        gap: 20px;
     }
     
     .allMob-img {
@@ -150,6 +155,7 @@ label {
     }
 
     .entities-list {
+        margin-top: 30px;
         gap: 10px;
         justify-content: center;
         height: 100%;
@@ -168,7 +174,7 @@ label {
     }
 
     .search-btn {
-        height: 5vh;
+        height: 6vh;
         width: 40%;
         margin-bottom: 5%;
     }
