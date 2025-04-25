@@ -15,7 +15,8 @@ body {
 }
 
 main {
-	background: repeat-x top center / contain url("../assets/background-dirt.png");
+	background: repeat-x top center / contain
+		url("../assets/background-dirt.png");
 	background-size: 300%;
 	display: flex;
 	flex-direction: column;
@@ -121,7 +122,7 @@ section {
 	text-decoration-style: solid;
 	text-decoration-thickness: 0%;
 	text-decoration-skip-ink: auto;
-	color: #0246F1;
+	color: #0246f1;
 }
 
 h5 {
@@ -130,7 +131,7 @@ h5 {
 	line-height: 100%;
 	text-align: center;
 	vertical-align: middle;
-	color: #3A3A3A;
+	color: #3a3a3a;
 }
 
 h4 {
@@ -138,7 +139,7 @@ h4 {
 	font-size: 16px;
 	line-height: 100%;
 	text-align: center;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 
 h3 {
@@ -209,6 +210,12 @@ main {
 	.search1 {
 		width: 77%;
 	}
+
+	.block {
+		text-decoration: underline;
+		text-underline-offset: 8px;
+	}
+
 	main {
 		align-items: center;
 		background-size: 150%;
@@ -275,39 +282,38 @@ main {
 	}
 }
 
-
 .background-passive {
-    background-color: #4F8C69;
+	background-color: #4f8c69;
 }
 
 .background-neutral {
-    background-color: #E3B599;
+	background-color: #e3b599;
 }
 
 .background-hostile {
-    background-color: #D24646;
+	background-color: #d24646;
 }
 
 .border-bottom-hostile {
-    border-bottom: solid 2px #D24646;
+	border-bottom: solid 2px #d24646;
 }
 
 .border-bottom-neutral {
-    border-bottom: solid 2px #E3B599;
+	border-bottom: solid 2px #e3b599;
 }
 
 .border-bottom-passive {
-    border-bottom: solid 2px #4F8C69;
+	border-bottom: solid 2px #4f8c69;
 }
 
 .border-hostile {
-    border: solid 2px #D24646;
+	border: solid 2px #d24646;
 }
 
 .border-neutral {
-    border: solid 2px #E3B599;
+	border: solid 2px #e3b599;
 }
 
 .border-passive {
-    border: solid 2px #4F8C69;
+	border: solid 2px #4f8c69;
 }
