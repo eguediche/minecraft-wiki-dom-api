@@ -110,12 +110,42 @@ section {
 	border-radius: 4px;
 }
 
+.special-link {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: underline;
+	text-decoration-style: solid;
+	text-decoration-thickness: 0%;
+	text-decoration-skip-ink: auto;
+	color: #0246F1;
+}
+
+h5 {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	color: #3A3A3A;
+}
+
+h4 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 100%;
+	text-align: center;
+	color: #FFFFFF;
+}
+
 h3 {
 	color: #8c8c8c;
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 100%;
-	letter-spacing: 0%;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -132,7 +162,6 @@ h1 {
 	font-weight: 300;
 	font-size: 48px;
 	line-height: 100%;
-	letter-spacing: 0%;
 	text-align: center;
 }
 

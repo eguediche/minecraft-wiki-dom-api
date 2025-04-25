@@ -39,7 +39,7 @@ const damageInput = document.querySelector("#damage-input");
 const form = document.querySelector("#form-input");
 const searchBtn = document.querySelector(".search-btn");
 
-const searchResult = document.querySelector(".search-result");
+const searchResult = document.querySelector(".good-search");
 const wrongResult = document.querySelector(".wrong-search");
 
 
@@ -82,29 +82,65 @@ searchBtn.addEventListener("click", function () {
       entities.forEach(function (entity) {
         const card = document.createElement("div");
         card.classList.add("entity-card");
+
+        const classBox = document.createElement("div");
+        classBox.classList.add("card-class-box");
   
         const nameBox = document.createElement("div");
-        nameBox.textContent = "Name: " + entity.name;
+        nameBox.classList.add("card-name-box");
+        const nameTxt = document.createElement("h4");
+        nameTxt.textContent = entity.name;
+
+        const image = document.createElement("img");
+        image.classList.add("entity-img");
+        image.src = entity.image
+
+        const classification = document.createElement("h5");
+        classification.textContent = entity.classification;
+        classification.classList.add("special-link");
   
-        const type = document.createElement("div");
-        type.textContent = "Type: " + entity.type;
-  
-        const classification = document.createElement("div");
-        classification.textContent = "Class: " + entity.classification;
+        const type = document.createElement("h5");
+        type.textContent =  entity.type;
   
         const seeMoreBtn = document.createElement("button");
-        seeMoreBtn.textContent = "SEE MORE";
+        const seeMoreBtnTxt = document.createElement("h4");
+        seeMoreBtnTxt.textContent = "SEE MORE";
+        seeMoreBtn.classList.add("see-more-btn");
   
         /*un qi de 114, je prend l'id du mob pour le diriger vers l'url car c plus simple*/
         seeMoreBtn.addEventListener("click", function () {
-          window.location.href = "renseignements.html?id=" + entity.id;
+          window.location.href = "/wiki/renseignements.html?id=" + entity.id;
         });
   
         card.appendChild(nameBox);
-        card.appendChild(type);
-        card.appendChild(classification);
+        nameBox.appendChild(nameTxt);
+        card.appendChild(image);
+        card.appendChild(classBox);
+        classBox.appendChild(classification);
+        classBox.appendChild(type);
         card.appendChild(seeMoreBtn);
-  
+        seeMoreBtn.appendChild(seeMoreBtnTxt);
+
+
+        if (entity.type.toLowerCase() === "hostile") {
+          nameBox.classList.add("background-hostile");
+          seeMoreBtn.classList.add("background-hostile");
+          classBox.classList.add("border-bottom-hostile");
+          card.classList.add("border-hostile");
+        } else if (entity.type.toLowerCase() === "neutral") {
+          nameBox.classList.add("background-neutral");
+          seeMoreBtn.classList.add("background-neutral");
+          classBox.classList.add("border-bottom-neutral");
+          card.classList.add("border-neutral");
+        } else {
+          nameBox.classList.add("background-passive");
+          seeMoreBtn.classList.add("background-passive");
+          classBox.classList.add("border-bottom-passive");
+          card.classList.add("border-passive");
+        }
+
+        
+   
         searchResult.appendChild(card);
       });
     }

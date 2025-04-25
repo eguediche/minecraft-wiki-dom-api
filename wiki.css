@@ -135,11 +135,102 @@ label {
     gap: 20px;
 }
 
+
 .emoji-wrongSearch {
     width: 20%;
 }
 
+.entity-img {
+    width: 45%;
+    height: 45%;
+}
+
+.entity-card {
+    margin-bottom: 5%;
+    padding: 12px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    width: 80%;
+    height: 37vh;
+    justify-self: center;
+    align-items: center;
+}
+
+.card-class-box {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+
+.card-name-box {
+    padding: 12px;
+    gap: 10px;
+    box-shadow: -4px -4px 2px 0px #00000040 inset;
+    width: 100%;
+}
+
+.see-more-btn {
+    padding: 12px;
+    gap: 10px;
+    box-shadow: -4px -4px 2px 0px #00000040 inset;
+    width: 100%;
+    border: none;
+}
+
+.background-passive {
+    background-color: #4F8C69;
+}
+
+.background-neutral {
+    background-color: #E3B599;
+}
+
+.background-hostile {
+    background-color: #D24646;
+}
+
+.border-bottom-hostile {
+    border-bottom: solid 2px #D24646;
+}
+
+.border-bottom-neutral {
+    border-bottom: solid 2px #E3B599;
+}
+
+.border-bottom-passive {
+    border-bottom: solid 2px #4F8C69;
+}
+
+.border-hostile {
+    border: solid 2px #D24646;
+}
+
+.border-neutral {
+    border: solid 2px #E3B599;
+}
+
+.border-passive {
+    border: solid 2px #4F8C69;
+}
+
+
 @media  screen and (min-width: 768px) {
+
+    .entity-card {
+        height: 45vh;
+        width: 90%;
+    }
+
+    .good-search {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
     .yap-wiki {
         flex-direction: row;
         height: 30vh;
@@ -189,6 +280,16 @@ label {
 }
 
 @media screen and (min-width: 1080px) {
+
+    .good-search {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .entity-card {
+        height: 35vh;
+        width: 90%;
+    }
+
     .yap-wiki {
         height: 20vh;
     }

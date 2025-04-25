@@ -18,46 +18,6 @@ if (entityId) {
 function displayEntity(entity) {
   const container = document.querySelector(".search-result");
 
-  const card = document.createElement("div");
-  card.classList.add("entity-card");
-
-  const name = document.createElement("div");
-  name.textContent = "Name: " + entity.name;
-
-  const health = document.createElement("p");
-  health.textContent = "Health: " + entity.health;
-
-  const armor = document.createElement("p");
-  armor.textContent = "Armor: " + entity.armor;
-
-  const damage = document.createElement("p");
-  damage.textContent = "Damage: " + entity.damage;
-
-  const type = document.createElement("p");
-  type.textContent = "Type: " + entity.type;
-
-  const classification = document.createElement("p");
-  classification.textContent = "Classification: " + entity.classification;
-
-  const size = document.createElement("p");
-  const height = entity.size && entity.size.height ? entity.size.height : "?";
-  const width = entity.size && entity.size.width ? entity.size.width : "?";
-  size.textContent = "Size: Height " + height + " / Width " + width;
-
-  const details = document.createElement("div");
-  details.textContent = "DETAILS";
-
-  card.appendChild(name);
-  card.appendChild(health);
-  card.appendChild(armor);
-  card.appendChild(damage);
-  card.appendChild(type);
-  card.appendChild(classification);
-  card.appendChild(size);
-  card.appendChild(details);
-
-  container.appendChild(card);
-
   entityName.textContent = entity.name;
   entityDesc.textContent = entity.description;
 }
