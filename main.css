@@ -274,3 +274,40 @@ main {
 		gap: 250px;
 	}
 }
+
+
+.background-passive {
+    background-color: #4F8C69;
+}
+
+.background-neutral {
+    background-color: #E3B599;
+}
+
+.background-hostile {
+    background-color: #D24646;
+}
+
+.border-bottom-hostile {
+    border-bottom: solid 2px #D24646;
+}
+
+.border-bottom-neutral {
+    border-bottom: solid 2px #E3B599;
+}
+
+.border-bottom-passive {
+    border-bottom: solid 2px #4F8C69;
+}
+
+.border-hostile {
+    border: solid 2px #D24646;
+}
+
+.border-neutral {
+    border: solid 2px #E3B599;
+}
+
+.border-passive {
+    border: solid 2px #4F8C69;
+}

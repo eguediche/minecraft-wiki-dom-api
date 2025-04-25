@@ -121,12 +121,10 @@ searchBtn.addEventListener("click", function () {
         card.appendChild(seeMoreBtn);
         seeMoreBtn.appendChild(seeMoreBtnTxt);
 
-
         if (entity.type.toLowerCase() === "hostile") {
           nameBox.classList.add("background-hostile");
           seeMoreBtn.classList.add("background-hostile");
           classBox.classList.add("border-bottom-hostile");
-          card.classList.add("border-hostile");
         } else if (entity.type.toLowerCase() === "neutral") {
           nameBox.classList.add("background-neutral");
           seeMoreBtn.classList.add("background-neutral");
@@ -138,10 +136,7 @@ searchBtn.addEventListener("click", function () {
           classBox.classList.add("border-bottom-passive");
           card.classList.add("border-passive");
         }
-
-        
-   
-        searchResult.appendChild(card);
+       searchResult.appendChild(card);
       });
     }
   }

@@ -7,7 +7,6 @@ const container = document.querySelector(".search-result");
 const params = new URLSearchParams(window.location.search);
 const entityId = params.get("id");
 
-if (entityId) {
   fetch("http://51.38.232.174:3000/v1/entities/" + entityId)
     .then(function (response) {
       return response.json();
@@ -15,9 +14,13 @@ if (entityId) {
     .then(function (entity) {
       displayEntity(entity);
     });
-}
 
 function displayEntity(entity) {
+
+  const card = document.createElement("div");
+  card.classList.add("entity-card");
+
+
   entityName.textContent = entity.name;
   entityDesc.textContent = entity.description;
 
@@ -28,9 +31,11 @@ function displayEntity(entity) {
   nameTxt.textContent = entity.name;
 
   const nameImg = document.createElement("img");
+  nameImg.classList.add("name-img")
   nameImg.src = entity.icon;
 
   const mobImg = document.createElement("img");
+  mobImg.classList.add("mob-img")
   mobImg.src = entity.image;
 
   const healthBox = document.createElement("div");
@@ -47,7 +52,7 @@ function displayEntity(entity) {
   mobHealthSpan.classList.add("mob-span");
 
   const HealthSpanImg = document.createElement("img");
-  HealthSpanImg.src = /assets/healthicon.svg;
+  HealthSpanImg.src = "/assets/healthicon.svg"
 
   const armorBox = document.createElement("div");
   armorBox.classList.add("armor-box");
@@ -62,7 +67,7 @@ function displayEntity(entity) {
   mobarmorSpan.classList.add("mob-span");
 
   const armorSpanImg = document.createElement("img");
-  armorSpanImg.src = /assets/armoricon.svg;
+  armorSpanImg.src = "/assets/armoricon.svg"
 
   const strengthBox = document.createElement("div");
   strengthBox.classList.add("strength-box");
@@ -77,7 +82,7 @@ function displayEntity(entity) {
   mobStrengthSpan.classList.add("mob-span");
 
   const StrengthSpanImg = document.createElement("img");
-  StrengthSpanImg.src = /assets/healthicon.svg;
+  StrengthSpanImg.src = "/assets/healthicon.svg"
 
   const classBox = document.createElement("div");
   classBox.classList.add("class-box");
@@ -87,10 +92,10 @@ function displayEntity(entity) {
 
   const mobClass = document.createElement("h5");
   mobClass.textContent = entity.classification;
-  mobClass.classList.Add("special-link")
+  mobClass.classList.add("special-link")
 
   const behaviorBox = document.createElement("div");
-  behaviorBox.classList.Add("behavior-box");
+  behaviorBox.classList.add("behavior-box");
 
   const mobTbehavior = document.createElement("h5");
   mobTbehavior.textContent = "behavior";
@@ -103,14 +108,92 @@ function displayEntity(entity) {
   detailBtn.textContent = "DETAILS";
 
   const sizeBox = document.createElement("div");
-  sizeBox.classList.Add("size-box");
+  sizeBox.classList.add("size-box");
 
   const mobSizeTitle = document.createElement("h5");
   mobSizeTitle.textContent = "Size";
 
   const mobSizeH = document.createElement("p");
+  mobSizeH.classList.add("h-w-span")
   mobSizeH.textContent = "Height: " + entity.height + " blocks";
 
-  const mobSizew = document.createElement("p");
-  mobSizew.textContent = "Width: " + entity.width + " blocks";
+  const mobSizeW = document.createElement("span");
+  mobSizeW.classList.add("size-span");
+  mobSizeW.textContent = "Width: " + entity.width + " blocks";
+
+  card.appendChild(nameBox); 
+  nameBox.appendChild(nameImg);
+  nameBox.appendChild(nameTxt);
+
+  card.appendChild(mobImg);
+
+  card.appendChild(healthBox);
+  healthBox.appendChild(mobThealth);
+  healthBox.appendChild(mobHealth);
+  mobHealth.appendChild(mobHealthSpan);
+
+  mobHealthSpan.appendChild(HealthSpanImg);
+  
+  card.appendChild(armorBox);
+  armorBox.appendChild(mobTarmor);
+  armorBox.appendChild(mobArmor);
+  mobArmor.appendChild(mobarmorSpan);
+  mobarmorSpan.appendChild(armorSpanImg);
+
+  card.appendChild(strengthBox);
+  strengthBox.appendChild(mobTstrength);
+  strengthBox.appendChild(mobStrength);
+  mobStrength.appendChild(mobStrengthSpan);
+  mobStrengthSpan.appendChild(StrengthSpanImg);
+
+  card.appendChild(classBox);
+  classBox.appendChild(mobTclass);
+  classBox.appendChild(mobClass);
+
+  card.appendChild(behaviorBox);
+  behaviorBox.appendChild(mobTbehavior);
+  behaviorBox.appendChild(mobBehavior);
+
+  card.appendChild(detailBtn);
+
+
+  card.appendChild(sizeBox);
+
+  sizeBox.appendChild(mobSizeTitle);
+  sizeBox.appendChild(mobSizeH);
+  mobSizeH.appendChild(mobSizeW);
+
+  container.appendChild(card);
+
+  if (entity.type.toLowerCase() === "hostile") {
+    nameBox.classList.add("background-hostile");
+    classBox.classList.add("border-bottom-hostile");
+    detailBtn.classList.add("background-hostile");
+    armorBox.classList.add("border-bottom-hostile");
+    strengthBox.classList.add("border-bottom-hostile");
+    classBox.classList.add("border-bottom-hostile");
+    behaviorBox.classList.add("border-bottom-hostile");
+    healthBox.classList.add("border-bottom-hostile");
+    card.classList.add("border-hostile");
+  } else if (entity.type.toLowerCase() === "neutral") {
+    nameBox.classList.add("background-neutral");
+    classBox.classList.add("border-bottom-neutral");
+    card.classList.add("border-neutral");
+    detailBtn.classList.add("background-neutral");
+    armorBox.classList.add("border-bottom-neutral");
+    strengthBox.classList.add("border-bottom-neutral");
+    classBox.classList.add("border-bottom-neutral");
+    behaviorBox.classList.add("border-bottom-neutral");
+    healthBox.classList.add("border-bottom-neutral");
+  } else {
+    nameBox.classList.add("background-passive");
+    classBox.classList.add("border-bottom-passive");
+    card.classList.add("border-passive");
+    detailBtn.classList.add("background-passive");
+    armorBox.classList.add("border-bottom-passive");
+    strengthBox.classList.add("border-bottom-passive");
+    classBox.classList.add("border-bottom-passive");
+    behaviorBox.classList.add("border-bottom-passive");
+    healthBox.classList.add("border-bottom-passive");
+  }
 }
