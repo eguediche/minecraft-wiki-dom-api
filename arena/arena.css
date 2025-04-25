@@ -95,9 +95,8 @@ section {
 
 
 tr {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 table {
@@ -179,6 +178,10 @@ table {
 		align-items: center;
 		gap: 10px;
 		height: 7vh;
+	}
+
+	tr {
+		width: 100%;
 	}
 }
 
