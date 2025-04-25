@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html-class" lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,32 @@
 		<title>Rules</title>
 	</head>
 	<body>
+		<div class="menu-burger">
+			<div class="background"></div>
+			<div class="croix">
+				<img class="croix-icon" src="./assets/croix.svg" alt="croix fermer menu burger">
+			</div>
+			<div class="link-menu">
+				<div class="button-link-menu">
+					<img class="menu-img-2" src="../assets/explore.svg" alt="explore" />
+					<p>
+						<a class="link-pages-menu" href="../index.html">EXPLORE</a>
+					</p>
+				</div>
+				<div class="button-link-menu">
+					<img class="menu-img" src="../assets/arena.svg" alt="arena" />
+					<p>
+						<a class="link-pages-menu" href="../arena/arena.html">ARENA</a>
+					</p>
+				</div>
+				<div class="button-link-menu">
+					<img class="menu-img" src="../assets/rule.svg" alt="rules" />
+					<p>
+						<a class="link-pages-menu" href="./rules.html">RULES</a>
+					</p>
+				</div>
+				</div>
+		</div>
 		<header>
 			<nav>
 				<div class="nav-1">
@@ -94,4 +120,24 @@
 			</section>
 		</main>
 	</body>
+	<script src="../main.js"></script>
+	<script>
+		
+const burerMenu = document.querySelector(".burger");
+const menuDiv = document.querySelector(".menu-burger");
+const croixMenu = document.querySelector(".croix-icon");
+const HTML = document.querySelector("#html-class")
+
+burerMenu.addEventListener("click", () => {
+  console.log("debugg");
+  menuDiv.style.display = "flex";
+  HTML.classList.add("overflow-hidden");
+});
+
+croixMenu.addEventListener("click", () => {
+    menuDiv.style.display = "none";
+    console.log("debugg2")
+    HTML.classList.remove("overflow-hidden");
+  });
+	</script>
 </html>

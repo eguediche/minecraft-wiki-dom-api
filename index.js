@@ -140,4 +140,3 @@ searchBtn.addEventListener("click", function () {
       });
     }
   }
-  

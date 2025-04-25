@@ -12,6 +12,7 @@
 
 body {
 	background: url("../assets/BlockBlack.jpg");
+	min-height: 100%;
 }
 
 main {
@@ -108,6 +109,7 @@ section {
 	margin-top: 142px;
 	background-color: #e6eff4;
 	border-radius: 4px;
+	min-height: 110%;
 }
 
 .special-link {
@@ -195,12 +197,79 @@ html {
 	height: 100vh;
 }
 
-body {
-	height: 100vh;
-}
 main {
 	height: max-content;
 }
+
+.menu-burger{
+	display: none;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: absolute;
+	align-items: center;
+	flex-direction: column;
+	gap: 40%;
+}
+
+.background {
+	background-color: black;
+	opacity: 50%;
+	display: flex;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+	position: absolute;
+}
+
+.link-pages-menu {
+	color: white;
+	font-weight: 600;
+	font-size: 38px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.button-link-menu {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.menu-img {
+	width: 20%;
+}
+
+.menu-img-2 {
+	width: 6vh;
+}
+
+.link-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	z-index: 3;
+}
+
+.croix {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	width: 100%;
+	z-index: 3;
+	margin-top: 5%;
+	margin-right: 5%;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+  }
 
 @media screen and (min-width: 768px) {
 	.search {
@@ -240,8 +309,21 @@ main {
 		display: flex;
 		gap: 24px;
 	}
+
+	.menu-burger{
+		display: none;
+	}
+
 	.button-link {
-		color: #fff;
+		color: #ffff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 13px;
+	}
+
+	.button-link-menu {
+		color: #ffff;
 		display: flex;
 		justify-content: center;
 		align-items: center;

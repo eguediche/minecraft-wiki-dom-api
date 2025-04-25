@@ -11,8 +11,12 @@ main {
 }
 
 section {
-    gap: 0px;
+    gap: 5px;
     height: 100%;
+}
+
+.entity-name {
+    margin: 2%;
 }
 
 .help-wiki {
@@ -41,13 +45,11 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 10%;
 }
 
 .entites-yap {
     display: flex;
     flex-direction: column;
-    height: 100%;
     gap: 20px;
     margin-top: 5%;
 }
@@ -65,7 +67,7 @@ section {
 .entity-card {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 2px;
     padding: 12px;
     height: 100%;
 }
@@ -178,6 +180,14 @@ section {
         margin-top: 5%;
     }
 
+    .entites-yap {
+        width: 40%;
+    }
+
+    .search-result {
+        width: 60%;
+    }
+
     .img {
         height: 100%;
     }
@@ -185,12 +195,13 @@ section {
     .entity-card {
         width: 100%;
         padding: 7px;
+        height: 85%;
     }
 }
 
 @media screen and (min-width: 1080px) {
     .entites-yap {
-        width: 70%;
+        width: 50%;
     }
 
     .entity-card {
@@ -199,10 +210,12 @@ section {
         flex-direction: column;
         gap: 10px;
         padding: 12px;
+        height: 100%;
     }
 
     .search-result {
         margin: 0;
+        width: 50%;
     }
 
     .entites-yap {
