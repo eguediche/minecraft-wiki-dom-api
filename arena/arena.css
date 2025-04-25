@@ -71,46 +71,6 @@ section {
 	gap: 15px;
 }
 
-table {
-	border: 1px solid blackx;
-	border-collapse: collapse;
-}
-
-tr {
-	border: 1px solid #000000;
-}
-
-.body-head {
-	display: table-row-group;
-}
-
-.td-1 {
-	padding: 2px;
-}
-
-.td-2 {
-	padding: 2px;
-}
-
-.td-3 {
-	padding: 5px;
-}
-
-.td-4 {
-	padding: 3px;
-}
-.td-5 {
-	padding: 13px;
-}
-
-table {
-	color: #3a3a3a;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 100%;
-	letter-spacing: 0%;
-	vertical-align: middle;
-}
 
 .responsive-2 {
 	display: none;
@@ -118,13 +78,79 @@ table {
 
 .head-body {
 	background-color: #8e8e8e;
-	height: 37px;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.body-head {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
 }
 
 section {
 	width: 88vw;
 }
 
+
+tr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+table {
+	width: 80vw;
+	border-collapse: collapse;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  thead {
+	background-color: #d3d3d3;
+	width: 100%;
+  }
+  
+  thead th {
+	padding: 5px;
+	font-weight: 600;
+	text-align: center;
+  }
+  
+  tbody td {
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+  }
+  
+  tbody tr {
+	border-bottom: 1px solid #ccc;
+  }
+  
+  tbody img {
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
+  }
+  
+  .delete-btn {
+	background-color: #ff4d4d;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	padding: 5px 10px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+	background-color: #e60000;
+  }
+  
 @media screen and (min-width: 768px) {
 	.modo {
 		width: 95%;
@@ -153,7 +179,7 @@ section {
 		flex-direction: row;
 		align-items: center;
 		gap: 10px;
-		height: 27vh;
+		height: 7vh;
 	}
 }
 
