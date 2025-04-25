@@ -167,10 +167,11 @@
 						<tr class="head-body">
 							<th>Entity</th>
 							<th>Name</th>
-							<th>X</th>
-							<th>Z</th>
-							<th>Strength</th>
-							<th>Delete</th>
+							<th>X <span id="span-hidden">Coordinate</span></th>
+							<th>Z <span id="span-hidden">Coordinate</span></th>
+              <th id="span-nonhidden">Stre...</th>
+							<th id="span-hidden">Strength</th>
+							<th>del</th>
 						</tr>
 					</thead>
 					<tbody class="body-head"></tbody>
@@ -178,5 +179,24 @@
 			</section>
 		</main>
 		<script type="module" src="arena.js"></script>
+    <script>
+		
+      const burerMenu = document.querySelector(".burger");
+      const menuDiv = document.querySelector(".menu-burger");
+      const croixMenu = document.querySelector(".croix-icon");
+      const HTML = document.querySelector("#html-class")
+      
+      burerMenu.addEventListener("click", () => {
+        console.log("debugg");
+        menuDiv.style.display = "flex";
+        HTML.classList.add("overflow-hidden");
+      });
+      
+      croixMenu.addEventListener("click", () => {
+          menuDiv.style.display = "none";
+          console.log("debugg2")
+          HTML.classList.remove("overflow-hidden");
+        });
+        </script>
 	</body>
 </html>

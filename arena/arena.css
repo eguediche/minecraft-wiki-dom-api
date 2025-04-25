@@ -97,6 +97,7 @@ section {
 tr {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	padding: 2px;
 }
 
 table {
@@ -105,6 +106,8 @@ table {
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
+	border: 1px solid black;
+	background-color: white;
   }
   
   thead {
@@ -113,7 +116,7 @@ table {
   }
   
   thead th {
-	padding: 5px;
+	padding: 3px;
 	font-weight: 600;
 	text-align: center;
   }
@@ -122,6 +125,7 @@ table {
 	padding: 5px;
 	text-align: center;
 	vertical-align: middle;
+	background: white;
   }
   
   tbody tr {
@@ -139,7 +143,7 @@ table {
 	color: white;
 	border: none;
 	border-radius: 6px;
-	padding: 5px 10px;
+	padding: 5px;
 	cursor: pointer;
 	font-weight: bold;
 	transition: background-color 0.3s ease;
@@ -148,8 +152,33 @@ table {
   .delete-btn:hover {
 	background-color: #e60000;
   }
+
+  #span-hidden {
+	display: none;
+  }
   
 @media screen and (min-width: 768px) {
+
+	tr {
+		padding: 5px;
+	}
+	thead th {
+		display: flex;
+		gap: 5px;
+	}
+
+	table {
+		display: flex;
+		align-self: center;
+	}
+	#span-hidden {
+		display: block;
+	}
+
+	#span-nonhidden {
+		display: none;
+	}
+
 	.modo {
 		width: 95%;
 		height: 3vh;
@@ -176,6 +205,7 @@ table {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		justify-content: space-evenly;
 		gap: 10px;
 		height: 7vh;
 	}
@@ -183,10 +213,23 @@ table {
 	tr {
 		width: 100%;
 	}
+
 }
 
 @media screen and (min-width: 1080px) {
+	tr {
+		padding: 10px;
+	}
+
 	input {
 		width: 25vw;
+	}
+
+	#span-hidden {
+		display: block;
+	}
+
+	#span-nonhidden {
+		display: none;
 	}
 }
