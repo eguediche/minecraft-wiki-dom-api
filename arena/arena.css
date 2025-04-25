@@ -87,7 +87,6 @@ section {
 .body-head {
 	display: flex;
 	flex-direction: row;
-	gap: 10px;
 }
 
 section {
