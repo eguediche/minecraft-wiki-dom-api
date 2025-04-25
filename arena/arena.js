@@ -5,7 +5,6 @@ const spawnForm = document.getElementById("form-spawn");
 const select = document.querySelector("#entityId");
 
 async function main() {
-	// Load entity options
 	const allEntities = await (await fetch(`${API_URL}/entities`)).json();
 	for (let entity of allEntities) {
 		const option = document.createElement("option");
@@ -13,8 +12,6 @@ async function main() {
 		option.value = entity.id;
 		select.appendChild(option);
 	}
-
-	// Load current arena entities
 	const arenaEntitiesRes = await fetch(`${API_URL}/arena/entities`);
 	const arenaEntities = await arenaEntitiesRes.json();
 
@@ -100,3 +97,4 @@ spawnForm.addEventListener("submit", async (e) => {
 });
 
 main();
+  
